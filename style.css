@@ -1,0 +1,296 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s, color 0.5s;
+    margin-left: 0;
+}
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: color 0.5s;
+}
+body.light-theme {
+    color: #333;
+    background-color: #f0f0f5; 
+}
+.light-theme .main-header {
+    background-color: #2b2d42; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.light-theme .main-header h1 {
+    color: #edf2f4; 
+}
+.light-theme .main-nav a {
+    color: #8d99ae;
+}
+.light-theme .main-nav a:hover {
+    color: #edf2f4;
+    background-color: #ef233c; 
+}
+.light-theme .about-section,
+.light-theme .game-card {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.light-theme .main-footer {
+    background-color: #2b2d42;
+    color: #8d99ae;
+}
+.light-theme .game-link {
+    background-color: #007bff;
+    color: white;
+}
+.light-theme .game-link:hover {
+    background-color: #0056b3;
+}
+.light-theme .game-card img {
+    border: 3px solid #ef233c;
+}
+.light-theme h2 {
+    color: #d90429; 
+}
+body.dark-theme {
+    color: #edf2f4;
+    background-color: #1a1a1a; 
+}
+.dark-theme .main-header {
+    background-color: #333333; 
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+.dark-theme .main-header h1 {
+    color: #ff9f1c; 
+}
+.dark-theme .main-nav a {
+    color: #ccc;
+}
+.dark-theme .main-nav a:hover {
+    color: #1a1a1a;
+    background-color: #ff9f1c; 
+}
+.dark-theme h2, .dark-theme h3 {
+    color: #ff9f1c; 
+}
+.dark-theme .about-section,
+.dark-theme .game-card {
+    background-color: #282828;
+    border: 1px solid #444;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+.dark-theme .main-footer {
+    background-color: #333333;
+    color: #ccc;
+}
+.dark-theme .game-link {
+    background-color: #ff9f1c;
+    color: #1a1a1a;
+}
+.dark-theme .game-link:hover {
+    background-color: #e08c1a;
+}
+.dark-theme .game-card img {
+    border: 3px solid #ff9f1c;
+}
+.dark-theme .play-now-button {
+    background-color: #ff9f1c;
+    color: #1a1a1a;
+    box-shadow: 0 4px #e08c1a;
+}
+.dark-theme .play-now-button:active {
+    box-shadow: 0 2px #e08c1a;
+}
+.dark-theme .main-footer a {
+    color: #ff9f1c;
+}
+.main-header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px 5%;
+}
+.header-content {
+    max-width: 1200px; 
+    width: 100%;
+    margin: 0 auto;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.header-buttons {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+}
+.play-now-button {
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: transform 0.1s, box-shadow 0.1s;
+    border: none;
+    cursor: pointer;
+}
+.play-now-button:active {
+    transform: translateY(2px);
+}
+.main-header h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+.main-nav a {
+    margin-left: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.section {
+    padding: 40px 5%;
+    margin-bottom: 30px;
+}
+.about-section {
+    text-align: center;
+    border-bottom: 3px solid #d90429;
+}
+.filter-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.filter-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: 2px solid #ef233c;
+    background: transparent;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7em;
+    transition: 0.3s;
+}
+.filter-btn.active, .filter-btn:hover {
+    background: #ef233c;
+    color: white;
+}
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 5%;
+}
+.game-card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.game-card:hover {
+    transform: translateY(-5px);
+}
+.game-card img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border: 5px solid #444;
+    margin: 20px 0;
+}
+.game-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.main-footer {
+    padding: 20px 5%;
+    margin-top: 50px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.main-footer a {
+    margin-left: 10px;
+}
+.hidden {
+    display: none !important;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .main-nav {
+       display: flex;
+    gap: 15px;
+    }
+    .main-nav a {
+      margin-left: 0;
+    }
+    .header-buttons {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .header-buttons button,
+    .header-buttons a {
+        width: 100%;
+        margin: 0;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-links {
+        margin-top: 10px;
+    }
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    backdrop-filter: blur(5px);
+}
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    position: relative;
+    color: #333;
+}
+.close-modal {
+    position: absolute;
+    right: 20px; top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.dark-theme .modal-content {
+    background-color: #282828;
+    color: #edf2f4;
+    border: 1px solid #ff9f1c;
+}
+

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ретро-Аркада: Классические Игры</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme"> <header class="main-header">
+        <div class="header-content">
+            <h1>🎮 Ретро-Аркада</h1>
+            <nav class="main-nav">
+                <a href="#about">О Нас</a>
+                <a href="#games">Игры</a>
+                <a href="#contact">Контакты</a>
+            </nav>
+           <div class="header-buttons">
+    <button id="theme-toggle" class="play-now-button">Сменить Тему</button>
+    <a href="#catalog" class="play-now-button">Играть Сейчас</a>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-body">
+            </div>
+    </div>
+</div>
+    </header>
+    <main class="main-body">
+        <section id="about" class="section about-section">
+            <h2> Вернитесь в Золотую Эру Игр!</h2>
+            <div id="about-content">
+                <p> Добро пожаловать в коллекцию нестареющей классики! Здесь собраны легендарные игры, которые покорили миллионы сердец. Простота, увлекательность и ностальгия — вот что делает их великими. </p>
+                <p>Мы верим, что настоящая магия игр кроется в их доступности и захватывающем геймплее. Наслаждайтесь!</p>
+             </div>
+            <button id="toggle-about" class="game-link" style="margin-top: 15px;">Скрыть Описание</button>
+        </section>
+        <section id="games" class="section games-section">
+            <h2>👾 Наши Классические Хиты</h2>
+            <div class="games-grid">
+                <article class="game-card">
+                    <h3>Тетрис (Tetris)</h3>
+                    <img src="3bc0dc4f773759c4d7391c28fbe28238.png" alt="Изображение игры Тетрис">
+                    <p>Тетрис — это легендарная игра-головоломка, где игрок управляет падающими с верха экрана фигурами, состоящими из четырех блоков , и вращает их, чтобы складывать в сплошные горизонтальные ряды без пробелов. </p>
+                    <a href="tertr.html" class="play-now-button">ИГРАТЬ</a>
+                </article>
+                <article class="game-card">
+                    <h3 >Сапёр (Minesweeper)</h3>
+                    <img src="сапёр.png" alt="Изображение игры Сапёр">
+                    <p>Сапёр — это классическая логическая игра-головоломка, где цель — открыть все клетки игрового поля, не попав на мины, используя подсказки в виде цифр, указывающих количество мин в соседних ячейках, и помечая предполагаемые мины флажками, чтобы победить, проанализировав расстановку мин.</p>
+                </article>
+                <article class="game-card">
+                    <h3>Змейка (Snake)</h3>
+                    <img src="Zmeyka-01.jpg" alt="Изображение игры Змейка">
+                    <p>Змейка — классическая аркадная игра, где игрок управляет постоянно движущейся змейкой, задача которой — съесть как можно больше яблок</p>
+                    <a href="SNAKE.html" class="play-now-button">ИГРАТЬ</a>
+                </article>
+                <article class="game-card">
+                    <h3>2048</h3>
+                    <img src="logo200.png" alt="Изображение игры 2048">
+                    <p>«2048» — это популярная игра-головоломка, где цель — объединять плитки с числами (степенями двойки), чтобы создать плитку со значением 2048.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+<section id="catalog" class="section catalog-section">
+            <h2>🎮 Каталог Ретро-Игр</h2>
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="arcade">Аркады</button>
+                <button class="filter-btn" data-category="logic">Логические</button>
+            </div>
+            <div id="games-grid" class="games-grid"></div>
+        </section>
+    </main>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <footer id="contact" class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Ретро-Аркада. Все права на игры принадлежат их разработчикам.</p>
+            <div class="social-links">
+                <a href="#">Limonhick6</a> | <a href="#">GitHub</a>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
